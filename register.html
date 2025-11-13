@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Akun Baru - Ruang Belajar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="register">
+  <div class="overlay">
+    <div class="form-box">
+      <h2>DAFTAR AKUN BARU</h2>
+      <form id="registerForm">
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Username" required>
+        <div class="password-box">
+          <input type="password" placeholder="Password" id="regPassword" required>
+          <span class="toggle-password" onclick="togglePassword('regPassword')">👁️</span>
+        </div>
+        <div class="password-box">
+          <input type="password" placeholder="Konfirmasi Password" id="confirmPassword" required>
+          <span class="toggle-password" onclick="togglePassword('confirmPassword')">👁️</span>
+        </div>
+        <button type="submit" class="btn">Buat Akun</button>
+      </form><br>
+      <p>Sudah punya akun? <a href="login.html">Login Sekarang</a></p>
+    </div>
+  </div>
+  <footer>© 2025 Ruang Belajar | Dibuat untuk belajar website</footer>
+  <script src="script.js"></script>
+</body>
+</html>

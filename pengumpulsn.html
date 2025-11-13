@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumpulan Tugas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="pengumpulan.html" class="active">Pengumpulan Tugas</a></li>
+      <li><a href="hasil.html">Hasil Tugas</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <h1>Form Pengumpulan Tugas</h1>
+    <form id="uploadForm" onsubmit="return uploadFile()">
+      <input type="text" id="nama" placeholder="Nama Lengkap" required>
+      <input type="text" id="mapel" placeholder="Mata Pelajaran" required>
+      <input type="file" id="file" required>
+      <button type="submit">Kumpulkan</button>
+    </form>
+
+    <p id="status"></p>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
